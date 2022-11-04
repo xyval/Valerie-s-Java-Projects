@@ -61,4 +61,13 @@ Betting:
 
 ## **Challenges Faced**
 
-When I first wrote the code, I wrote it as a one round game, but once I start adding loops in to make it more interested, I encountered several issues, such as that the code goes into an infinite loop or the math is not correct. However, I solved these issues by thouroughly checking my code. I realised that I often put the {} in the wrong place or I forgot to re-initiate variables. Also, there was one problem that was only a problem because I didn't realize it printed so much words at the same time that I thought it didn't do anything at all. After solving the issues, I carefully checked all scenario and now I am confident that the game will run smoothly. 
+When I first wrote the code, I wrote it as a one round game, but once I start adding loops in to make it more interested, I encountered several issues, such as that the code goes into an infinite loop or the math is not correct. However, I solved these issues by thouroughly checking my code. I realised that I often put the {} in the wrong place or I forgot to re-initiate variables. Also, there was one problem that was only a problem because I didn't realize it printed so much words at the same time that I thought it didn't do anything at all. After solving the issues, I carefully checked all scenario and now I am confident that the game will run smoothly.
+
+---
+Modified Blackjack Game: Blackjack - Twenty-Six
+
+by Valerie Lin
+
+Created on 28th October 2022 
+
+--- 
