@@ -1,3 +1,9 @@
+/*
+Modified Blackjack Game: Blackjack - Twenty-Six
+by Valerie Lin
+Created on 28th October 2022 
+*/
+
 import java.util.Scanner;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
