@@ -77,10 +77,38 @@ public class KillingMonsterWithMath
         int correctA=0;
         switch (topic)
         {
-            case 1:
-                //topic 1
+            case 1: 
+            //topic 1: Arithmatics (+-*/)
+                int type = r.nextInt(4);
+                switch (type)
+                {
+                    case 0: //addition
+
+                    case 1: //subtraction 
+
+                    case 2: //multiplication
+
+                    case 3: //division 
+                }
             case 2:
+            //topic 2: system of equations 
+                int x = r.nextInt(1,10);
+                int y = r.nextInt(1, 10);
+                int a = r.nextInt(1, 10);
+                int b = r.nextInt(1, 10); 
+                int c = r.nextInt(1, 10); 
+                int d = r.nextInt(1, 10); 
+                /* 
+                 * ax + by = ?
+                 * cx - dy = ? 
+                 * correctA = x
+                 */
             case 3:
+            //topic 3: quadratic function 
+                x = r.nextInt(1, 10);
+                a = r.nextInt(1, 4);
+                b = (-1) * 2  * a * x;
+                c = x = r.nextInt(1, 50);
         }
         return correctA;
     }
