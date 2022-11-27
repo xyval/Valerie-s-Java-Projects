@@ -43,7 +43,7 @@ public class KillingMonsterWithMath
 
     }
 
-    //ask for topic 
+    //ask for topic (done)
     public static int askLevel ()
     {
         int topic = 0;
@@ -109,6 +109,10 @@ public class KillingMonsterWithMath
                 a = r.nextInt(1, 4);
                 b = (-1) * 2  * a * x;
                 c = x = r.nextInt(1, 50);
+                /*
+                 * f(x) = ax² - -bx + c
+                 * find x for the minimum
+                 */
         }
         return correctA;
     }
@@ -119,7 +123,7 @@ public class KillingMonsterWithMath
 
     }
 
-    //get user's answer, show guide if they need help (or no)
+    //get user's answer
     public static int userAns ()
     {
         Scanner k2 = new Scanner(System.in);
