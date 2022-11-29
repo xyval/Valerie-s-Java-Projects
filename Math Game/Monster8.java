@@ -13,15 +13,15 @@ public class Monster8 extends JFrame{
     public static void draw(int round)
     {
         JFrame f = new JFrame("Round "+ round);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.add(new monster8());
+        f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        f.add(new mon8());
         f.pack();
         f.setVisible(true);
     }
 }
 
-class monster8 extends JPanel {
-    public monster8() {
+class mon8 extends JPanel {
+    public mon8() {
         setBorder(BorderFactory.createLineBorder(Color.black));
 
     }
