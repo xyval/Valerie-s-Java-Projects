@@ -110,6 +110,7 @@ public class KillingMonsterWithMath
                 int d = r.nextInt(1, 10); 
                 int e = a*x + b*y;
                 int f = c*x + b*y;
+                System.out.println("Find the x value for this system of equations:");
                 System.out.println(a + "x + " + b + "y = " + e);
                 System.out.println(c + "x + " + d + "y = " + f);
                 correctA = x;
