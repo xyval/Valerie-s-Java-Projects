@@ -101,16 +101,21 @@ public class KillingMonsterWithMath
                     case 3: //division 
                 }
             case 2:
-            //topic 2: system of equations 
+            //topic 2: system of equations (done)
                 int x = r.nextInt(1,10);
                 int y = r.nextInt(1, 10);
                 int a = r.nextInt(1, 10);
                 int b = r.nextInt(1, 10); 
                 int c = r.nextInt(1, 10); 
                 int d = r.nextInt(1, 10); 
+                int e = a*x + b*y;
+                int f = c*x + b*y;
+                System.out.println(a + "x + " + b + "y = " + e);
+                System.out.println(c + "x + " + d + "y = " + f);
+                correctA = x;
                 /* 
-                 * ax + by = ?
-                 * cx - dy = ? 
+                 * ax + by = e
+                 * cx - dy = f 
                  * correctA = x
                  */
             case 3:
