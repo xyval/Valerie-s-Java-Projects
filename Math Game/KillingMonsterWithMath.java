@@ -124,10 +124,9 @@ public class KillingMonsterWithMath
                 a = r.nextInt(1, 4);
                 b = (-1) * 2  * a * x;
                 c = x = r.nextInt(1, 50);
-                /*
-                 * f(x) = ax² - -bx + c
-                 * find x for the minimum
-                 */
+                System.out.println("Find the x value for the minimum of this function: ");
+                System.out.println("f(x) = " + a + "x^2 - " + b + "x + " + c);
+                correctA = x;
         }
         return correctA;
     }
