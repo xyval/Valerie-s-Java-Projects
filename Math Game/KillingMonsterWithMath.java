@@ -90,33 +90,32 @@ public class KillingMonsterWithMath
             case 1: 
             //topic 1: Arithmatics (+-*/)
                 int type = r.nextInt(4);
+                int a = r.nextInt(1, 100);
+                int b = r.nextInt(1, 100); 
+                
+               
                 switch (type)
                 {
                     case 0: //addition
-
+                        correctA = a+b;
                     case 1: //subtraction 
-
+                        correctA = a-b;
                     case 2: //multiplication
-
+                        correctA = a*b;
                     case 3: //division 
+                        correctA = a/b;
                 }
             case 2:
-            //topic 2: system of equations (done)
+            //topic 2: system of equations 
                 int x = r.nextInt(1,10);
                 int y = r.nextInt(1, 10);
                 int a = r.nextInt(1, 10);
                 int b = r.nextInt(1, 10); 
                 int c = r.nextInt(1, 10); 
                 int d = r.nextInt(1, 10); 
-                int e = a*x + b*y;
-                int f = c*x + b*y;
-                System.out.println("Find the x value for this system of equations:");
-                System.out.println(a + "x + " + b + "y = " + e);
-                System.out.println(c + "x + " + d + "y = " + f);
-                correctA = x;
                 /* 
-                 * ax + by = e
-                 * cx - dy = f 
+                 * ax + by = ?
+                 * cx - dy = ? 
                  * correctA = x
                  */
             case 3:
@@ -125,9 +124,10 @@ public class KillingMonsterWithMath
                 a = r.nextInt(1, 4);
                 b = (-1) * 2  * a * x;
                 c = x = r.nextInt(1, 50);
-                System.out.println("Find the x value for the minimum of this function: ");
-                System.out.println("f(x) = " + a + "x^2 - " + b + "x + " + c);
-                correctA = x;
+                /*
+                 * f(x) = ax² - -bx + c
+                 * find x for the minimum
+                 */
         }
         return correctA;
     }
