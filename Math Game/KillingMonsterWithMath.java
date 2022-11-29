@@ -47,9 +47,9 @@ public class KillingMonsterWithMath
         System.out.println("There are three topics within the maths problem");
         System.out.println("The three choices are artithmetic, system of equations and quadratic function");
         System.out.println("In order to kill the monster, you will need to pass the questions.");
-        System.out.println("If you answer correctly you will receive 1 point");
-        System.out.println("BUT if you answer wrong you will get 1 point off");
-        System.out.println("You will need a total of 10 point to successfully kill the monster");
+        System.out.println("If you answer correctly you will receive 1 bite");
+        System.out.println("BUT if you answer wrong you will get 1 bite off");
+        System.out.println("You will need a total of 10 bite to successfully kill the monster");
         System.out.println("GOOD LUCK!");
     }
 
