@@ -1,14 +1,23 @@
+/* 
+Killing Monster With Maths 
+by Valerie Lin & Valerie Siao 
+created 29th November 2022
+*/ 
+
 //imports: 
 import java.util.*;
 
 public class KillingMonsterWithMath
 {
-    public static void main(String[]arg) throws InterruptedException 
+    public static void main(String[]arg)  
     {
+        //variables declaration
         int score = 0;
         int round = 0;
         int correctA = 0;
         int userA = 0;
+        
+        //game: 
         intro();
         int topic = askTopic();
         while (topic != 4)
@@ -57,7 +66,7 @@ public class KillingMonsterWithMath
         System.out.println("Accuracy: " + ((double) score/(double) round) + " %");
     }
 
-    //print out rules & any welcome message or smt (done) 
+    //introduction
     public static void intro ()
     {
         System.out.println("Welcome to killing monster with maths! ");
@@ -73,7 +82,7 @@ public class KillingMonsterWithMath
         System.out.println("GOOD LUCK!");
     }
 
-    //ask for topic (done)
+    //ask for topic 
     public static int askTopic ()
     {
         int topic = 0;
@@ -114,26 +123,30 @@ public class KillingMonsterWithMath
                 int b = r.nextInt(1, 100); 
                 switch (type)
                 {
-                    case 0: //addition
+                    case 0: //addition: a + b = correctA
                         correctA = a+b;
                         System.out.println(a + " + " + b + " = ");
                         break;
-                    case 1: //subtraction 
+                        
+                    case 1: //subtraction: a - b = correctA
                         correctA = a-b;
                         System.out.println(a + " - " + b + " = ");
                         break;
-                    case 2: //multiplication
+                        
+                    case 2: //multiplication: a × b = correctA
                         correctA = a*b;
                         System.out.println(a + " × " + b + " = ");
                         break;
-                    case 3: //division 
+                        
+                    case 3: //division: a ÷ b = correctA
                         correctA = a/b;
                         System.out.println(a + " ÷ " + b + " = ");
                         break;
                 }
                 break;
+                
             case 2:
-            //topic 2: system of equations (done)
+            //topic 2: system of equations 
                 int x = r.nextInt(1,10);
                 int y = r.nextInt(1, 10);
                 a = r.nextInt(1, 10);   
@@ -147,33 +160,28 @@ public class KillingMonsterWithMath
                 System.out.println(a + "x + " + b + "y = " + e);
                 System.out.println(c + "x + " + d + "y = " + f);
                 correctA = x;
-                /* 
-                 * ax + by = e
-                 * cx - dy = f 
-                 * correctA = x
-                 */
+                //ax + by = e
+                //cx - dy = f 
+                //correctA = x
                 break;
+                
             case 3:
             //topic 3: quadratic function 
                 x = r.nextInt(1, 10);
-                a = r.nextInt(1, 4);
+                a = r.nextInt(1, 5);
                 b = (-1) * 2  * a * x;
                 c = r.nextInt(1, 50);
                 System.out.println("Find the x value for the minimum of this function: ");
                 System.out.println("f(x) = " + a + "x^2 - " + -b + "x + " + c);
                 correctA = x;
+                //f(x) = ax^2 + bx + c 
+                //correctA = x
                 break;
         }
         return correctA;
     }
     
-    //show question (maybe won't use)
-    //public static void showQ ()
-    {
-
-    }
-
-    //get user's answer
+    //get user input
     public static int userAns ()
     {
         Scanner k2 = new Scanner(System.in);
@@ -182,6 +190,7 @@ public class KillingMonsterWithMath
         return userAns;
     }
 
+    //show result Monster 
     public static void showMonster (int round, int score)
     {
         switch (score)
@@ -222,18 +231,3 @@ public class KillingMonsterWithMath
         }
     }
 }
-
-/* For Planning:
-    explain rules
-    repeat: 
-        ask for what topic
-        generate question
-        show question
-        show guide if need help 
-        get user's answer
-        get correct answer
-        check answer
-        record score 
-        add score # of circles 
-        show monster 
- */
