@@ -54,7 +54,7 @@ public class KillingMonsterWithMath
         {
             System.out.println("You lost.");
         }
-        System.out.println("Accuracy: " + (score/round) + " %");
+        System.out.println("Accuracy: " + ((double) score/(double) round) + " %");
     }
 
     //print out rules & any welcome message or smt (done) 
