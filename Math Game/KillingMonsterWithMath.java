@@ -4,7 +4,6 @@ by Valerie Lin & Valerie Siao
 created 29th November 2022
 */ 
 
-//imports: 
 import java.util.*;
 
 public class KillingMonsterWithMath
