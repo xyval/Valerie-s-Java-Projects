@@ -137,9 +137,9 @@ public class KillingMonsterWithMath
                         System.out.println(a + " × " + b + " = ");
                         break;
                         
-                    case 3: //division: a ÷ b = correctA
-                        correctA = a/b;
-                        System.out.println(a + " ÷ " + b + " = ");
+                    case 3: //division: c ÷ b = a = correctA
+                        correctA = a;
+                        System.out.println((a*b) + " ÷ " + b + " = ");
                         break;
                 }
                 break;
