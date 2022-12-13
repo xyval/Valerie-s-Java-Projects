@@ -37,7 +37,7 @@ public class KillingMonsterWithMath
                 catch(Exception e){e.printStackTrace();}
                 showMonster(round, score);
             }
-            else if (score != 0)
+            else 
             {
                 score--;
                 System.out.println("WRONG");
